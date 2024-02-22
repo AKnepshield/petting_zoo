@@ -10,7 +10,8 @@ class PettingAreaAnimal(Animal):
         self.food = food
     def feed(self):
         print(f"{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}")
-
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
 
 class Bull(PettingAreaAnimal):
     def __init__(self, name, shift, date_added=None):
