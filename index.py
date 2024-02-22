@@ -5,79 +5,88 @@ from slithering import CopperheadSnake, RatSnake, Turtle, Gecko, Scorpion
 from swimming import MallardDuck, GoldFish, SnappingTurtle
 from flying import Parakeet
 
-llama_del_ray = Llama("Llama Del Ray", "Midday")
+llama_del_ray = Llama("Llama Del Ray", "Midday", "Llama Chow")
 print(llama_del_ray)
+llama_del_ray.feed()
 print(
     f"{llama_del_ray.name} the {llama_del_ray.species} is available to pet during the {llama_del_ray.shift}\n"
 )
-wonkey = Donkey("Wonkey the donkey", "Afternoon")
+
+wonkey = Donkey("Wonkey the donkey", "Afternoon", "Donkey Chow")
 print(wonkey)
+wonkey.feed()
 print(
     f"{wonkey.name} the {wonkey.species} is available to pet during the {wonkey.shift}\n"
 )
+
 baaba_fett = Goat("Baaba Fett", "Midday")
 print(baaba_fett)
 print(
     f"{baaba_fett.name} the {baaba_fett.species} is available to pet during the {baaba_fett.shift}\n"
 )
-copperhead_snake = CopperheadSnake("Krom")
-print(copperhead_snake)
+
+krom = CopperheadSnake("Krom", "Snake Chow")
+print(krom)
+krom.feed()
 print()
-rat_snake = RatSnake("Serpentor")
-print(rat_snake)
+
+serpentor = RatSnake("Serpentor", "Snake Chow")
+print(serpentor)
+serpentor.feed()
 print()
-mallard_duck = MallardDuck("Dewey")
-print(mallard_duck)
+
+dewey = MallardDuck("Dewey", "Duck Chow")
+print(dewey)
+dewey.feed()
 print()
-gold_fish = GoldFish("Wanda")
-print(gold_fish)
+
+wanda = GoldFish("Wanda")
+print(wanda)
+wanda.feed()
 print()
-hidalgo = Horse("Hidalgo", "Morning")
+
+hidalgo = Horse("Hidalgo", "Morning", "Horse Chow")
 print(hidalgo)
+hidalgo.feed()
 print(
     f"{hidalgo.name} the {hidalgo.species} is available to pet during the {hidalgo.shift}\n"
 )
-turtle = Turtle("Leo")
-print(turtle)
+
+leo = Turtle("Leo", "Turtle Chow")
+print(leo)
+leo.feed()
 print()
-splinter = Rat("Splinter", "Afternoon")
+
+splinter = Rat("Splinter", "Afternoon", "Rat Chow")
 print(splinter)
+splinter.feed()
 print(
     f"{splinter.name} the {splinter.species} is available to pet during the {splinter.shift}\n"
 )
-gecko = Gecko("Spike")
-print(gecko)
+
+spike = Gecko("Spike", "Gecko Chow")
+print(spike)
+spike.feed()
 print()
-parakeet = Parakeet("Toxie")
-print(parakeet)
+
+toxie = Parakeet("Toxie", "Parakeet Chow")
+print(toxie)
+toxie.feed()
 print()
-snapping_turtle = SnappingTurtle("Slash")
-print(snapping_turtle)
+
+slash = SnappingTurtle("Slash", "Snapping Turtle Chow")
+print(slash)
+slash.feed()
 print()
-scorpion = Scorpion("Scorpius")
-print(scorpion)
+
+scorpius = Scorpion("Scorpius", "Scorpion Chow")
+print(scorpius)
+scorpius.feed()
 print()
-dwayne = Bull("Dwayne", "Morning")
+
+dwayne = Bull("Dwayne", "Morning", "Bull Chow")
 print(dwayne)
+dwayne.feed()
 print(
     f"{dwayne.name} the {dwayne.species} is available to pet during the {dwayne.shift}\n"
 )
-
-
-# class Complex:
-#     def __init__(self, real, imag):
-#         self.real = real
-#         self.imag = imag
-
-#     def add(self, number):
-#         real = self.real + number.real
-#         imag = self.imag + number.imag
-#         result = Complex(real, imag)
-#         return result
-
-
-# n1 = Complex(5, 6)
-# n2 = Complex(-4, 2)
-# result = n1.add(n2)
-# print("real =", result.real)
-# print("imag =", result.imag)

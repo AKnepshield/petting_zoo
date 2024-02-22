@@ -3,11 +3,13 @@ from animal import Animal
 
 
 class PettingAreaAnimal(Animal):
-    def __init__(self, name, species, date_added=None):
+    def __init__(self, name, species, food, date_added=None):
         super().__init__(name, species, "Petting Area", date_added)
         self.flying = True
+        self.food = food
+    def feed(self):
+        print(f"{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}")
 
-
-class Parakeet(Animal):
+class Parakeet(PettingAreaAnimal):
     def __init__(self, name, date_added=None):
         super().__init__(name, "Parakeet", date_added)
