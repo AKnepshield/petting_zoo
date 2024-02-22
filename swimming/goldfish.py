@@ -13,3 +13,4 @@ class PondAnimal(Animal):
 class GoldFish(PondAnimal):
     def __init__(self, name, date_added=None):
         super().__init__(name, "Gold Fish", "Goldfish Chow", date_added)
+    def __str__:
